@@ -3,7 +3,7 @@ const BadgeSize = {
     double: "4x6",
 };
 const Print = {
-    standart: "color",
+    standard: "color",
     fast: "zpl",
 };
 var BadgeTypesEnum;
@@ -14,9 +14,9 @@ var BadgeTypesEnum;
 class Student {
     badgeTypeMap = new Map([
         ["single_fast", BadgeTypesEnum.COLOR],
-        ["single_standart", BadgeTypesEnum.COLOR],
+        ["single_standard", BadgeTypesEnum.COLOR],
         ["double_fast", BadgeTypesEnum.MONO],
-        ["double_standart", BadgeTypesEnum.MONO],
+        ["double_standard", BadgeTypesEnum.MONO],
     ]);
     _firstName;
     _lastName;

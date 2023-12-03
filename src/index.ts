@@ -4,7 +4,7 @@ const BadgeSize = {
 };
 
 const Print = {
-  standart: "color",
+  standard: "color",
   fast: "zpl",
 };
 
@@ -26,12 +26,13 @@ interface Visit {
   present: boolean;
 }
 
+type BadgeCombination = `${BadgeSizeType}_${PrintType}`;
 class Student {
-  badgeTypeMap = new Map<string, string>([
+  badgeTypeMap = new Map<BadgeCombination, BadgeTypesEnum>([
     ["single_fast", BadgeTypesEnum.COLOR],
-    ["single_standart", BadgeTypesEnum.COLOR],
+    ["single_standard", BadgeTypesEnum.COLOR],
     ["double_fast", BadgeTypesEnum.MONO],
-    ["double_standart", BadgeTypesEnum.MONO],
+    ["double_standard", BadgeTypesEnum.MONO],
   ]);
 
   _firstName: string;
